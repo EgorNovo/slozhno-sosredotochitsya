@@ -1,5 +1,206 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+/*------------mobile-first-dark-------------*/
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  background-color: var(--bg-color);
+  background-image: var(--backgroubd-img);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 192px 1fr;
+  align-items: center;
+  height: calc(100vmax - 20px);
+  margin: 10px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-inline-end: 1px solid var(--accent-color-header);
+  border-block-start: 1px solid var(--accent-color-header);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-inline-start: 1px solid var(--accent-color-header);
+  border-block-end: 1px solid var(--accent-color-header);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.header__main {
+  align-self: end;
+  color: var(--main-header-color);
+  font-weight: bold;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border-style: none;
+  /*---выравнивание текста в кнопке по центру-------*/
+  padding-bottom: 0.25em;
+  color: var(--accent-color-header);
+  font-size: 18px;
+  line-height: 1em;
+  text-transform: lowercase;
+  background-color: transparent;
+  /*------------------------------------------------*/
+  cursor: pointer;
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-header-hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  appearance: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color-header);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color-header);
+  pointer-events: none;
+}
+
+.header__main-description {
+  background-color: var(--accent-color);
+}
+
+.header__main-text {
+  display: block;
+  color: var(--minor-header-color);
+  line-height: 23.4px;
+}
+
+.header__main-hidden-span {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  display: var(--display-option);
+  color: var(--accent-color);
+}
+
+.header__main-hidden-span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -19px;
+  display: block;
+  width: 9px;
+  height: 9px;  
+  border-radius: 4.5px;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background: var(--accent-color);
+}
+/*-------------------------------------*/
+
+/*----------section why----------------*/
+.section-content {
+  margin: 50px 10px;
+}
+
+.main-header {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.minor-header {
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+  color: var(--minor-header-color);
+  font-size: 18px;
+  background-color: var(--accent-color);
+}
+
+.article {
+  line-height: 23.4px;
+}
+
+.article__link {
+  position: relative;
+  color: currentColor;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* сделал подчеркивание через бордер тк в макете у подчеркивания нет тени */
+.article__link:hover  {
+  border-block-end: 1px solid currentColor;
+}
+
+.article__link:focus {
+  outline: none;
+  appearance: none;
+}
+
+.article__link:focus-visible {
+  border: 1px solid currentColor;
+}
+
+/*----------section what----------------*/
+
+/*----------section how-----------------*/
+.low-header {
+  height: 23px;
+  font-weight: normal;
+}
+
+/*----------section figure--------------*/
+.figure-grid {
+  display: grid;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+
+.figure__header {
+  color: var(--minor-header-color);
+  font-size: 18px;
+  background-color: var(--accent-color);
+}
+
+.figure__img {
+  width: 100%;
+}
+
+/*----------footer--------------*/
+
+.footer {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vmax - 20px);
+  margin: 0 10px 10px;
 }

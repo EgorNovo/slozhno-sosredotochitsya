@@ -1,7 +1,7 @@
 @media (1024px <= width) { 
   .header {
     grid-template-rows: 1fr 130px 1fr;
-    height: calc(56vmax - 40px);
+    height: calc(56vh - 40px);
   }
 
   .header__theme-menu {
@@ -55,7 +55,7 @@
 
   /*--------footer-------------------*/
   .footer {
-    height: calc(56vmax - 40px);
+    height: calc(56vh - 40px);
   }
   
 }

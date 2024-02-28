@@ -35,7 +35,7 @@
   }
 
   .why__article:not(:last-child) {
-    margin-block-end: 20px; 
+    margin-block-end: 20px;
   }
 
   /*----------section what----------------*/
@@ -75,7 +75,7 @@
   }
 
   .how__article:not(:last-child) {
-    margin-block-end: 10px; 
+    margin-block-end: 10px;
   }
 
   /*----------section figure--------------*/
@@ -89,7 +89,7 @@
   .figure-grid {
     display: grid;
     grid-template-columns: repeat(3, calc(1/3 * (100% - 40px)));
-    gap: 20px; 
+    gap: 20px;
   }
 
   .figure__img {
@@ -107,7 +107,7 @@
   .figure__img-2 {
     grid-row: span 2;
     aspect-ratio: 229/441;
-    }
+  }
 
   .figure__img-3 {
     grid-row: span 2;

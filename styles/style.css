@@ -118,7 +118,7 @@
   right: -19px;
   display: block;
   width: 9px;
-  height: 9px;  
+  height: 9px;
   border-radius: 4.5px;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
   background: var(--accent-color);
@@ -156,7 +156,7 @@
 }
 
 /* сделал подчеркивание через бордер тк в макете у подчеркивания нет тени */
-.article__link:hover  {
+.article__link:hover {
   border-block-end: 1px solid currentColor;
 }
 

@@ -13,7 +13,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 192px 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   height: calc(100vmax - 20px);
   margin: 10px;
@@ -65,7 +65,7 @@
   /*---выравнивание текста в кнопке по центру-------*/
   padding-bottom: 0.25em;
   color: var(--accent-color-header);
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 1em;
   text-transform: lowercase;
   background-color: transparent;
@@ -180,7 +180,7 @@
 
 .figure__header {
   color: var(--minor-header-color);
-  font-size: 18px;
+  font-size: var(--font-size);
   background-color: var(--accent-color);
 }
 
@@ -195,11 +195,11 @@
   align-content: center;
   height: calc(100vmax - 20px);
   margin: 0 10px 10px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (768px <= width) {
   .header {
-    grid-template-rows: 1fr 100px 1fr;
     height: calc(100vh - 40px);
     margin: 20px;
   }
@@ -319,6 +319,10 @@
     height: clamp(27.5625rem, -1.3125rem + 60.1563vw, 37.1875rem);;
   }
 
+  .figure__img-4 {
+    height: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
+  }
+
   .figure__img-3 {
     grid-row: span 2;
     height: clamp(35.5rem, -2rem + 78.125vw, 48rem);
@@ -334,13 +338,13 @@
     height: calc(100vh - 40px);
     margin: 0 20px 20px;
   }
+
+  .footer__header {
+    margin-inline-start: 0;
+  }
 }
 
 @media (1024px <= width) {
-  .header {
-    grid-template-rows: 1fr 130px 1fr;  
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -380,6 +384,10 @@
 
   .figure__img-3 {
     height: clamp(48rem, 2rem + 71.875vw, 66.6875rem);
+  }
+
+  .figure__img-4 {
+    height: clamp(19.6875rem, 0.7644rem + 29.5673vw, 27.375rem);
   }
 
   .figure__img-5 {

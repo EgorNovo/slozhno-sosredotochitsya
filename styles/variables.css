@@ -7,7 +7,7 @@
   --accent-color-header-hover:  rgba(255, 0, 112, 0.4);
   --backgroubd-img: url(../images/cover-image-dark.png);
   --minor-header-color: var(--bg-color);
-  --font: "IBM Plex Mono", sans-serif;
+  --font: "IBM Plex Mono", monospace;
   --font-size: 18px;
   --display-option: block;
 }

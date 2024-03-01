@@ -1,4 +1,4 @@
-.theme_light {
+.page.theme_light {
   --accent-color: rgb(255, 141, 203);
   --bg-color: rgb(255, 241, 247);
   --text-color: rgb(53, 52, 48);
@@ -10,3 +10,16 @@
   --display-option: none;
 } 
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: rgb(255, 141, 203);
+    --bg-color: rgb(255, 241, 247);
+    --text-color: rgb(53, 52, 48);
+    --main-header-color: rgb(255, 194, 230);
+    --accent-color-header: rgb(53, 3, 48);
+    --accent-color-header-hover:  rgba(53, 3, 48, 0.4);
+    --backgroubd-img: url(../images/cover-image-light.png);
+    --minor-header-color: var(--text-color);
+    --display-option: none;
+  }
+}

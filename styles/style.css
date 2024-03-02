@@ -205,7 +205,6 @@
 
 @media (768px <= width) {
   .header {
-    height: max(668px, 100vh);
     padding: 20px;
   }
 
@@ -359,7 +358,6 @@
 
   /*-------footer----------*/
   .footer {
-    height: max(668px, 100vh);
     padding: 20px;
   }
 
@@ -380,6 +378,10 @@
     gap: 10px;
   }
 
+  .header__main-description {
+    max-width: 492px;
+  }
+
   .what {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -396,6 +398,10 @@
 
   .what__article {
     grid-column: auto;
+  }
+
+  .what__article p:not(:last-child) {
+    margin-block-end: 10px;
   }
 
   .figure__img-1 {

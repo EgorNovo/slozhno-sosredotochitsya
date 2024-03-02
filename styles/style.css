@@ -224,7 +224,7 @@
     right: 20px;
   }
   
-  .decorated-zone::before {  
+  .decorated-zone::before {
     bottom: 20px;
     left: 20px;
   }
